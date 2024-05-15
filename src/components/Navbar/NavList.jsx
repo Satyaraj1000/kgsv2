@@ -1,32 +1,33 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const AboutNav = () => {
   return (
     <div>
       <ul className="absolute text-left w-52 top-full left-0 font-semibold bg-bluekga p-2 hidden group-hover:block divide-y-2 divide-white space-y-2 text-xl">
         <li className="hover:text-pinkkga transform transition-all duration-300">
-          <a href="">Vision & Mission</a>
+          <NavLink to="/about-us/vision-and-mission">Vision & Mission</NavLink>
         </li>
         <li className="hover:text-pinkkga transform transition-all duration-300">
-          <a href="">Our Legacy</a>
+          <NavLink to="/about-us/our-legacy">Our Legacy</NavLink>
         </li>
         <li className="hover:text-pinkkga transform transition-all duration-300">
-          <a href="">A Tribute</a>
+          <NavLink to="/about-us/tribute">A Tribute to Chairman</NavLink>
         </li>
         <li className="hover:text-pinkkga transform transition-all duration-300">
-          <a href="">Chairperson</a>
+          <NavLink to="/about-us/chairperson">Chairperson</NavLink>
         </li>
         <li className="hover:text-pinkkga transform transition-all duration-300">
-          <a href="">Director of Acedmy</a>
+          <NavLink to="/about-us/director-of-academy">Director of Acedmy</NavLink>
         </li>
         <li className="hover:text-pinkkga transform transition-all duration-300">
-          <a href="">Head Mastress</a>
+          <NavLink to="/about-us/head-mastress">Head Mastress</NavLink>
         </li>
         <li className="hover:text-pinkkga transform transition-all duration-300">
-          <a href="">Other Institute</a>
+          <NavLink to="/about-us/other-institute">Other Institute</NavLink>
         </li>
         <li className="hover:text-pinkkga transform transition-all duration-300">
-          <a href="">Proud Achievements</a>
+          <NavLink to="/about-us/achievements">Proud Achievements</NavLink>
         </li>
       </ul>
     </div>
@@ -38,19 +39,19 @@ const AcademicsNav = () => {
     <div>
       <ul className="absolute text-left w-52 top-full left-0 font-semibold bg-bluekga p-2 hidden group-hover:block divide-y-2 divide-white space-y-2 text-xl">
         <li className="hover:text-pinkkga transform transition-all duration-300">
-          <a href="">Early year Program</a>
+          <NavLink to="/academics/early-year-program">Early year Program</NavLink>
         </li>
         <li className="hover:text-pinkkga transform transition-all duration-300">
-          <a href="">PYP</a>
+          <NavLink to="/academics/pyp">PYP</NavLink>
         </li>
         <li className="hover:text-pinkkga transform transition-all duration-300">
-          <a href="">MYP</a>
+          <NavLink to="/academics/myp">MYP</NavLink>
         </li>
         <li className="hover:text-pinkkga transform transition-all duration-300">
-          <a href="">IGCSE</a>
+          <NavLink to="/academics/igcse">IGCSE</NavLink>
         </li>
         <li className="hover:text-pinkkga transform transition-all duration-300">
-          <a href="">AS & A Level</a>
+          <NavLink to="/academics/a-level">AS & A Level</NavLink>
         </li>
       </ul>
     </div>
@@ -62,19 +63,19 @@ const EventsNav = () => {
     <div>
       <ul className="absolute text-left w-52 top-full left-0 font-semibold bg-bluekga p-2 hidden group-hover:block divide-y-2 divide-white space-y-2 text-xl">
         <li className="hover:text-pinkkga transform transition-all duration-300">
-          <a href="">Annual Day</a>
+          <NavLink to="/events/annual-day">Annual Day</NavLink>
         </li>
         <li className="hover:text-pinkkga transform transition-all duration-300">
-          <a href="">Graduation Day</a>
+          <NavLink to="/events/graduation-day">Graduation Day</NavLink>
         </li>
         <li className="hover:text-pinkkga transform transition-all duration-300">
-          <a href="">Celebration</a>
+          <NavLink to="/events/celebration">Celebration</NavLink>
         </li>
         <li className="hover:text-pinkkga transform transition-all duration-300">
-          <a href="">Visits & Outgoing</a>
+          <NavLink to="/events/visits--outgoing">Visits & Outgoing</NavLink>
         </li>
         <li className="hover:text-pinkkga transform transition-all duration-300">
-          <a href="">Fairs & Execution</a>
+          <NavLink to="/events/fairs--execution">Fairs & Execution</NavLink>
         </li>
       </ul>
     </div>
@@ -86,13 +87,13 @@ const CampusNav = () => {
     <div>
       <ul className="absolute text-left w-52 top-full left-0 font-semibold bg-bluekga p-2 hidden group-hover:block divide-y-2 divide-white space-y-2 text-xl">
         <li className="hover:text-pinkkga transform transition-all duration-300">
-          <a href="">Infrastructure & Facilities</a>
+          <NavLink to="/campus/infrastructure-facilities">Infrastructure & Facilities</NavLink>
         </li>
         <li className="hover:text-pinkkga transform transition-all duration-300">
-          <a href="">Videos</a>
+          <NavLink to="/campus/videos">Videos</NavLink>
         </li>
         <li className="hover:text-pinkkga transform transition-all duration-300">
-          <a href="">Photos</a>
+          <NavLink to="/campus/photos">Photos</NavLink>
         </li>
       </ul>
     </div>
@@ -104,27 +105,26 @@ const StudentNav = () => {
     <div>
       <ul className="absolute text-left w-52 top-full left-0  p-2 hidden font-semibold bg-bluekga group-hover:block divide-y-2 divide-white space-y-2 text-xl">
         <li className="hover:text-pinkkga transform transition-all duration-300">
-          <a href="">Sporting Activity</a>
+          <NavLink to="/student/">Sporting Activity</NavLink>
         </li>
         <li className="hover:text-pinkkga transform transition-all duration-300">
-          <a href="">Projects</a>
+          <NavLink to="/student/">Projects</NavLink>
         </li>
         <li className="hover:text-pinkkga transform transition-all duration-300">
-          <a href="">Co-carricular</a>
+          <NavLink to="/student/">Co-carricular</NavLink>
         </li>
         <li className="hover:text-pinkkga transform transition-all duration-300">
-          <a href="">Students Achievement</a>
+          <NavLink to="/student/">Students Achievement</NavLink>
         </li>
         <li className="hover:text-pinkkga transform transition-all duration-300">
-          <a href="">Environmental Initiative</a>
+          <NavLink to="/student/">Environmental Initiative</NavLink>
         </li>
         <li className="hover:text-pinkkga transform transition-all duration-300">
-          <a href="">MNU Conferences</a>
+          <NavLink to="/student/">MNU Conferences</NavLink>
         </li>
       </ul>
     </div>
   );
 };
 
-
-export {AboutNav, AcademicsNav, EventsNav, CampusNav, StudentNav};
+export { AboutNav, AcademicsNav, EventsNav, CampusNav, StudentNav };

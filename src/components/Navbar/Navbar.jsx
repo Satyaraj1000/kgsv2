@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { FaAngleDown } from "react-icons/fa";
 import { AboutNav, AcademicsNav, CampusNav, EventsNav, StudentNav } from "./NavList";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <>
-      <nav className="w-full">
+      <nav className="w-full z-10 sticky">
         <div className="w-full h-14 md:h-16 lg:h-24 flex items-center justify-between px-4 md:px-8">
           <div>
             <div className="space-x-3 md:space-x-6 inline-flex items-center">
@@ -55,12 +56,15 @@ const Navbar = () => {
           <div className="w-full h-full px-10">
             <ul className="w-full h-full flex items-center justify-between text-xl font-semibold text-white">
               <li className="relative group h-full items-center flex">
-                <a
-                  href="#"
-                  className="transform transition-all duration-500"
+                <NavLink
+                  to="/"
+                  className={({isActive})=>{
+                    isActive ? 'text-pinkkga'
+                    : 'text-white'
+                  }}
                 >
                   Home
-                </a>
+                </NavLink>
               </li>
               <li className="relative group h-full items-center flex">
                 <a href="#" className="flex items-center gap-1">
@@ -106,12 +110,12 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="relative group h-full items-center flex">
-                <a
-                  href="#"
+                <NavLink
+                  to="/contact-us"
                   className="transform transition-all duration-500"
                 >
                   Contact Us
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>
